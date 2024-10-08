@@ -2,7 +2,7 @@ import "./App.css";
 import Card from "./components/Card";
 import Header from "./components/Header";
 import Section from "./components/Sections";
-import TopBackgroundSection from "./components/TopBackgroundSection";
+import FirstSection from "./components/FirstSection";
 
 import imgSrc from "./assets/images/sean-pollock-PhYq704ffdA-unsplash 1.png";
 import backlit from "./assets/images/backlit-bonding-casual-708392-400x400 1.png";
@@ -14,7 +14,7 @@ function App() {
   return (
     <>
       <Header />
-      <TopBackgroundSection
+      <FirstSection
         title="The largest community of photo enthusiasts"
         buttonText="Join Today"
       />
@@ -149,29 +149,10 @@ function App() {
           title="Sign up for a free account"
           showFormBtn={true}
           buttonText="Register"
-          // showCardClass={true}
-          // cardClass="form-card"
         />
       </Section>
       <Footer />
     </>
-
-    // <div className="App">
-    //   <header className="App-header">
-    //     <img src={logo} className="App-logo" alt="logo" />
-    //     <p>
-    //       Edit <code>src/App.js</code> and save to reload.
-    //     </p>
-    //     <a
-    //       className="App-link"
-    //       href="https://reactjs.org"
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       Learn React
-    //     </a>
-    //   </header>
-    // </div>
   );
 }
 

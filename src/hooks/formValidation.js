@@ -9,7 +9,6 @@ export const formValidation = (formData) => {
   if (!formData.lastName.trim()) {
     errors.lastName = "Last name is required";
   }
-
   if (!/\S+@\S+\.\S+/.test(formData.email)) {
     errors.email = "Email is invalid";
   }

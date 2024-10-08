@@ -11,7 +11,6 @@ body {
   background: #F2F2F2;
 }
 
-
 /* Header */
 header {
   width: 100%;
@@ -87,7 +86,7 @@ header {
 }
 
 /* Background Section */
-.background-section {
+.first-section {
   position: relative;
   height: 600px;
   background-image: url('../assets/images/scott-graham-5fNmWej4tAA-unsplash\ 1.png');
@@ -99,7 +98,7 @@ header {
   flex-wrap: wrap;
 }
 
-.background-section::before {
+.first-section::before {
   content: '';
   position: absolute;
   top: 0;
@@ -109,7 +108,7 @@ header {
   background-color: #00000080;
 }
 
-.background-section>* {
+.first-section>* {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -117,7 +116,7 @@ header {
   color: #FFFFFF;
 }
 
-.background-section>h1 {
+.first-section>h1 {
   width: 100%;
   margin-bottom: 37px;
   font-weight: 400;
@@ -125,7 +124,7 @@ header {
   line-height: 80px;
 }
 
-.background-section>button {
+.first-section>button {
   width: 192px;
   height: 52px;
   margin-bottom: 100px;
@@ -135,6 +134,9 @@ header {
   font-weight: 500;
   font-size: 17px;
 }
+
+
+/* Sections */
 
 .section {
   background-color: #FFFFFF;
@@ -149,30 +151,59 @@ header {
   line-height: 55px;
 }
 
+.cards {
+  width: 100%;
+  margin-top: 60px;
+  display: flex;
+}
+
+.card {
+  margin-bottom: 60px;
+}
+
+.card h3 {
+  font-size: 24px;
+  line-height: 36px;
+  margin-bottom: 24px;
+}
+
+.card p {
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+
+.card button {
+  width: 130px;
+  height: 40px;
+  font-size: 15px;
+  border-radius: 6px;
+  border: 1px solid #18A0FB;
+  background-color: #18A0FB;
+  color: #FFFFFF;
+}
+
+
+/* First Section */
 .fst-sec h1 {
   width: 650px;
 }
 
+.fst-cards {
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.fstsec-card {
+  width: 45%;
+}
+
+
+/* Second Section */
 .sec-center {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-}
-
-.form-sec {
-  /* text-align: center; */
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin: 0;
-}
-
-.form-sec p {
-  width: 85%;
-  font-size: 30px;
-  line-height: 50px;
-  margin: 10px 0 22px;
-  text-align: center;
 }
 
 .sec-center>h1,
@@ -192,10 +223,37 @@ header {
   margin: 30px 0 40px 0;
 }
 
+.snd-cards {
+  margin-bottom: 60px;
+}
+
+.cards-child {
+  width: 45%;
+  margin-right: 60px;
+  padding-top: 70px;
+}
+
+.cards-img img {
+  width: 100%;
+}
+
+
+/* Third Section */
 .trd-sec {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+.trd-sec {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.trd-cards {
+  display: flex;
+  justify-content: space-between;
 }
 
 .trdsec-card {
@@ -225,43 +283,26 @@ header {
   margin-bottom: 48px !important;
 }
 
-.cards {
-  width: 100%;
-  margin-top: 60px;
-  display: flex;
-}
 
-.fst-cards {
-  justify-content: space-between;
+/* Fourth Section */
+.form-sec {
+  display: flex;
+  justify-content: center;
   flex-wrap: wrap;
+  margin: 0;
 }
 
-.snd-cards {
-  margin-bottom: 60px;
-}
-
-.trd-cards {
-  display: flex;
-  justify-content: space-between;
+.form-sec p {
+  width: 85%;
+  font-size: 30px;
+  line-height: 50px;
+  margin: 10px 0 22px;
+  text-align: center;
 }
 
 .form-cards {
   display: flex;
   justify-content: center;
-}
-
-.cards-child {
-  width: 45%;
-  margin-right: 60px;
-  padding-top: 70px;
-}
-
-.cards-img img {
-  width: 100%;
-}
-
-.card {
-  margin-bottom: 60px;
 }
 
 .form-cards .card {
@@ -281,14 +322,6 @@ header {
   position: relative;
 }
 
-.form-block input {
-  height: 40px;
-  width: 100%;
-  border: 1px solid #C4C4C4;
-  margin-bottom: 24px;
-  padding-left: 14px;
-}
-
 .firstName,
 .lastName,
 .email,
@@ -300,7 +333,15 @@ header {
   width: 100%;
 }
 
-.position{
+.form-block input {
+  height: 40px;
+  width: 100%;
+  border: 1px solid #C4C4C4;
+  margin-bottom: 24px;
+  padding-left: 14px;
+}
+
+.position {
   position: absolute;
   top: -7px;
   left: 8px;
@@ -310,32 +351,6 @@ header {
   padding: 0 7px;
 }
 
-.fstsec-card {
-  width: 45%;
-}
-
-
-.card h3 {
-  font-size: 24px;
-  line-height: 36px;
-  margin-bottom: 24px;
-}
-
-.card p {
-  font-size: 18px;
-  line-height: 30px;
-  margin-bottom: 30px;
-}
-
-.card button {
-  width: 130px;
-  height: 40px;
-  font-size: 15px;
-  border-radius: 6px;
-  border: 1px solid #18A0FB;
-  background-color: #18A0FB;
-  color: #FFFFFF;
-}
 
 /* Footer */
 footer {
@@ -367,17 +382,22 @@ footer {
   width: 30%;
 }
 
-
 .footer-navs div,
 .footer-navs ul li {
   color: #FFFFFF;
   list-style: none;
-  /* display: flex; */
-  /* justify-content: flex-end; */
 }
 
 .footer-navs li {
   color: #FFFFFFCC;
+}
+
+.app-link-head,
+.comm-link-head,
+.company-link-head {
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 700;
 }
 
 .app-links ul,
@@ -387,14 +407,6 @@ footer {
   font-weight: 400;
   line-height: 24px;
   margin-top: 16px;
-}
-
-.app-link-head,
-.comm-link-head,
-.company-link-head {
-  font-size: 15px;
-  line-height: 24px;
-  font-weight: 700;
 }
 
 .login-btns {
@@ -414,9 +426,7 @@ footer {
   line-height: 18px;
 }
 
-
 .footer-bottom {
-  /* height: 20px; */
   display: flex;
   justify-content: space-between;
   align-items: center;
